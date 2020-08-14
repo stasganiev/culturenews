@@ -9,6 +9,7 @@
 }
 
 body {
+    max-width: 1440px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
@@ -127,7 +128,6 @@ a {
     font-size: 72px;
     line-height: 84px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: #fff;
 }
 
@@ -140,4 +140,90 @@ a {
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 2px;
+}
+
+/*
+Шапка
+*/
+
+.head {
+    padding: 0 135px;
+}
+
+.main-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-nav {
+    margin-bottom: 45px;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-menu-item {
+    text-transform: uppercase;
+}
+
+/*
+Основная часть
+*/
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 465px;
+    padding: 0 135px;
+    margin-bottom: 50px;
+    background-image: url("img/offer.jpg");
+}
+
+.logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.offer__title {
+    margin-bottom: 130px;
+    text-transform: uppercase;
+}
+
+.offer__decription {
+    padding: 0 300px;
+    text-align: center;
+    line-height: 2;
+}
+
+.popular {
+    padding: 0 135px;
+}
+
+.popular__title {
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news__item {
+    width: 370px;
+}
+
+/*
+Подвал
+*/
+
+.footer {
+    background-color: #575757;
 }
