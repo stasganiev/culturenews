@@ -1,0 +1,143 @@
+/*
+Глобальные
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.list-default {
+    list-style: none;
+}
+
+/*
+Шрифты, типографика и цвета
+*/
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('fonts/PlayfairDisplay-Regular.eot');
+	src: url('fonts/PlayfairDisplay-Regular.woff') format('woff'), url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('fonts/PlayfairDisplay-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('fonts/PlayfairDisplay-Bold.eot');
+	src: url('fonts/PlayfairDisplay-Bold.woff') format('woff'), url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'), url('fonts/PlayfairDisplay-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Regular.eot');
+	src: url('fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype'), url('fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Bold.eot');
+	src: url('fonts/Roboto-Bold.woff') format('woff'), url('fonts/Roboto-Bold.ttf') format('truetype'), url('fonts/Roboto-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.font__pd_1 {
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+}
+
+.font__pd_2 {
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.font__pd_2-accent {
+    color: #FF7931;
+}
+
+.font__pd_3 {
+    font-family: "PlayfairDisplay";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.font__rob_1 {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.font__rob_1-ligth {
+    color: #fff;
+}
+
+.font__rob_2 {
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.font__rob_3 {
+    color: #fff;
+}
+
+.font__rob_4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}

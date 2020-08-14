@@ -9,6 +9,7 @@
     <!-- Нормализация стилей -->
     <link href="normalize.css" rel="stylesheet">
     <!-- Собственные стили -->
+    <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- Подключение шрифтов -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"><!-- или другой шрифт -->
@@ -17,9 +18,9 @@
 <body>
 
     <header class="head">
-        <h1 class="main-title">Новости культуры</h1>
+        <h1 class="main-title font__pd_1">Новости культуры</h1>
         <nav class="main-nav">
-            <ul class="main-menu color-light">
+            <ul class="main-menu color-light font__rob_1">
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Новости</a></li>
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Обзоры</a></li>
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Музыка</a></li>
@@ -36,29 +37,29 @@
     <main class="main">
 
         <section class="offer">
-            <h2 class="visually-hidde">Главная новость</h2>
+            <h2 class="visually-hidden">Главная новость</h2>
             <div class="logo">
                 <img src="img/logo.svg" alt="news" class="logo__img" width="55" height="55">
-                <p class="offer__title">Подводный отель</p>
-                <p class="offer__decription">Как известно, Дубай – город контрастов. Самые революционные 
+                <p class="offer__title font__rob_2">Подводный отель</p>
+                <p class="offer__decriptio font__rob_3">Как известно, Дубай – город контрастов. Самые революционные 
                     и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти
                 </p>
             </div>
         </section>
 
         <section class="popular">
-            <h2 class="popular__title">Обзоры</h2>
+            <h2 class="popular__title font__rob_4">Обзоры</h2>
             <ul class="news__list list-default"></ul>
             <li class="news__item">
                 <img src="img/news1.jpg" alt="" href="#" class="news__img" width="370" height="203">
-                <h3 class="news__title">«Шальные годы» Монпарнаса</h3>
+                <h3 class="news__title font__pd_2">«Шальные годы» Монпарнаса</h3>
                 <p class="news__description">
                     В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»
                 </p>
             </li>
             <li class="news__item">
                 <img src="img/news2.jpg" alt="" href="#" class="news__img" width="370" height="203">
-                <h3 class="news__title mews__title_accent">Анатомия за 30 секунд</h3>
+                <h3 class="news__title font__pd_2 font__pd_2-accent">Анатомия за 30 секунд</h3>
                 <p class="news__description">
                     Сейчас, когда мир открыт нараспашку для человека 
                     и его познавательных изысканий, интерес 
@@ -67,7 +68,7 @@
             </li>
             <li class="news__item">
                 <img src="img/news3.jpg" alt="" href="#" class="news__img" width="370" height="203">
-                <h3 class="news__title">Сферические чудаки</h3>
+                <h3 class="news__title font__pd_2">Сферические чудаки</h3>
                 <p class="news__description">
                     Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» 
                 </p>
@@ -75,22 +76,22 @@
         </section>
 
         <section class="promo">
-            <h2 class="promo__title visually-hidden promo__content">Абонементы в театр</h2>
+            <h2 class="promo__title visually-hidden promo__content font__rob_4">Абонементы в театр</h2>
             <ul class="promo__list list-default">
                 <li class="promo__item">
-                    <h3 class="promo__item-title">Скидка 50% на весь сезон 2020</h3>
+                    <h3 class="promo__item-title font__pd_2">Скидка 50% на весь сезон 2020</h3>
                     <p class="promo__item-description">
                         Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей
                     </p>
                 </li>
                 <li class="promo__item">
-                    <h3 class="promo__item-title">Места у сцены</h3>
+                    <h3 class="promo__item-title font__pd_2">Места у сцены</h3>
                     <p class="promo__item-description">
                         Только для обладателей абонементов будет возможность сесть поближе к сцене
                     </p>
                 </li>
                 <li class="promo__item">
-                    <h3 class="promo__item-title">Автограф-сессия актёров</h3>
+                    <h3 class="promo__item-title font__pd_2">Автограф-сессия актёров</h3>
                     <p class="promo__item-description">
                         После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф
                     </p>
@@ -102,9 +103,9 @@
     </main>
 
     <footer class="footer">
-        <h2 class="footer__title"></h2>
+        <h2 class="footer__title font__pd_3">Новости культуры</h2>
         <nav class="main-nav">
-            <ul class="main-menu color-dark">
+            <ul class="main-menu color-dark font__rob_1 font__rob_1-ligth">
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Новости</a></li>
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Обзоры</a></li>
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Музыка</a></li>
