@@ -202,6 +202,7 @@ a {
 
 .popular {
     padding: 0 135px;
+    margin-bottom: 80px;
 }
 
 .popular__title {
@@ -220,10 +221,104 @@ a {
     width: 370px;
 }
 
+.promo {
+    position: relative;
+    min-height: 556px;
+    margin-bottom: 50px;
+    background-color: #f7f7f7;
+    /* color: #00f; */
+    z-index: 10;
+}
+
+.promo::before {
+    position: absolute;
+    content: "";
+    width: 707px;
+    height: 707px;
+    left: 50%;
+    transform: translateX(-350px);
+    top: -75px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 720px;
+}
+
+.promo__wrap {
+    position: absolute;
+    width: 707px;
+    height: 707px;
+    left: 50%;
+    transform: translateX(-350px);
+    z-index: 10;
+
+    margin: 0 auto;
+    margin-top: -75px;
+    padding-bottom: 50px;
+    
+    background-color: transparent;
+    border-radius: 720px;
+    text-align: center;
+}
+
+.promo__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-125px);
+    top: 30px;
+    z-index: 10;
+    
+    min-width: 250px;
+    text-transform: uppercase;
+}
+
+.promo__list {
+    padding-top: 163px;
+}
+
+.promo__item {
+    margin: 0 auto;
+    max-width: 370px;
+}
+
+.promo__item-title {
+    margin-bottom: 10px;
+}
+
+.promo__item-description {
+    margin-bottom: 45px;
+}
+
+.promo__item:last-child .promo__item-description {
+    margin-bottom: 55px;
+}
+
+.btn {
+    appearance: none;
+    display: inline-block;
+    margin: 0;
+    padding: 12px 42px;
+    min-width: 100px;
+  
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  
+    color: #f7f7f7;
+    background-color: #FF7931;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.25s ease-out;
+}
+
 /*
 Подвал
 */
 
 .footer {
     background-color: #575757;
+    z-index: 10;
 }
