@@ -10,6 +10,7 @@
 
 body {
     max-width: 1440px;
+    margin: 0 auto;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
@@ -86,12 +87,20 @@ a {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Light.eot');
+	src: url('fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf') format('truetype'), url('fonts/Roboto-Light.svg') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
 .font__pd_1 {
     font-family: "PlayfairDisplay";
     font-weight: bold;
     font-size: 35px;
     line-height: 47px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 .font__pd_2 {
@@ -133,6 +142,8 @@ a {
 
 .font__rob_3 {
     color: #fff;
+    font-weight: 100;
+    line-height: 1.72;
 }
 
 .font__rob_4 {
@@ -152,12 +163,12 @@ a {
 
 .main-title {
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     text-align: center;
 }
 
 .main-nav {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
 }
 
 .main-menu {
@@ -170,6 +181,10 @@ a {
     text-transform: uppercase;
 }
 
+.main-menu-link:hover {
+    text-decoration: underline;
+}
+
 /*
 Основная часть
 */
@@ -180,13 +195,13 @@ a {
     align-items: center;
     min-height: 465px;
     padding: 0 135px;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     background-image: url("img/offer.jpg");
 }
 
 .logo {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 46px;
+    margin-bottom: 27px;
 }
 
 .offer__title {
@@ -195,18 +210,17 @@ a {
 }
 
 .offer__decription {
-    padding: 0 300px;
+    padding: 0 360px;
     text-align: center;
-    line-height: 2;
 }
 
 .popular {
     padding: 0 135px;
-    margin-bottom: 80px;
+    margin-bottom: 54px;
 }
 
 .popular__title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -221,13 +235,26 @@ a {
     width: 370px;
 }
 
+.news__img {
+    margin-bottom: 15px;
+}
+
+.news__title {
+    margin-bottom: 8px;
+}
+
+.news__description {
+    margin: 0;
+    padding: 0;
+}
+
 .promo {
     position: relative;
     min-height: 556px;
     margin-bottom: 50px;
     background-color: #f7f7f7;
-    /* color: #00f; */
     z-index: 10;
+    overflow: hidden;
 }
 
 .promo::before {
@@ -248,7 +275,7 @@ a {
     width: 707px;
     height: 707px;
     left: 50%;
-    transform: translateX(-350px);
+    transform: translateX(-355px);
     z-index: 10;
 
     margin: 0 auto;
@@ -263,8 +290,8 @@ a {
 .promo__title {
     position: absolute;
     left: 50%;
-    transform: translateX(-125px);
-    top: 30px;
+    transform: translateX(-115px);
+    top: 32px;
     z-index: 10;
     
     min-width: 250px;
@@ -281,7 +308,7 @@ a {
 }
 
 .promo__item-title {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .promo__item-description {
@@ -289,19 +316,24 @@ a {
 }
 
 .promo__item:last-child .promo__item-description {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
 }
 
 .btn {
+    position: relative;
     appearance: none;
     display: inline-block;
     margin: 0;
-    padding: 12px 42px;
+    padding-top: 15px;
+    padding-right: 63px;
+    padding-bottom: 15px;
+    padding-left: 30px;
     min-width: 100px;
   
     font-family: inherit;
-    font-size: inherit;
+    font-size: 12px;
     line-height: inherit;
+    letter-spacing: 2px;
   
     color: #f7f7f7;
     background-color: #FF7931;
@@ -311,7 +343,22 @@ a {
     border: none;
     box-shadow: none;
     cursor: pointer;
-    transition: 0.25s ease-out;
+    transition: 0.35s ease-out;
+}
+
+.btn__accent-img {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    transition: 0.35s ease-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px 15px rgba(255, 121, 49, 0.12);
+}
+
+.btn:hover .btn__accent-img {
+    right: 20px;
 }
 
 /*
@@ -319,6 +366,47 @@ a {
 */
 
 .footer {
+    padding: 0 135px;
+    padding-top: 25px;
+    padding-bottom: 40px;
     background-color: #575757;
-    z-index: 10;
+}
+
+.footer__title {
+    margin-bottom: 33px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.footer .main-nav {
+    padding-bottom: 47px;
+    margin-bottom: 40px;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 170px;
+}
+
+.social__link {
+    min-width: 47px;
+    min-height: 47px;
+    background-color: #fff;
+}
+
+.social__link:hover {
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.15);
+}
+
+.social__item-img {
+    display: block;
+    margin: auto;
+    margin-top: 13px;
+    width: 23px;
+    height: 23px;
 }

@@ -11,9 +11,6 @@
     <!-- Собственные стили -->
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <!-- Подключение шрифтов -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"><!-- или другой шрифт -->
-    <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" crossorigin="anonymous">
 </head>
 <body>
 
@@ -43,7 +40,7 @@
             </div>
             <p class="offer__title font__rob_2">Подводный отель</p>
             <p class="offer__decription font__rob_3">Как известно, Дубай – город контрастов. Самые революционные 
-                и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти
+                и&nbsp;фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти
             </p>
         </section>
 
@@ -62,8 +59,8 @@
                     <h3 class="news__title font__pd_2 font__pd_2-accent">Анатомия за 30 секунд</h3>
                     <p class="news__description">
                         Сейчас, когда мир открыт нараспашку для человека 
-                        и его познавательных изысканий, интерес 
-                        к научно‑популярной литературе заметно вырос
+                        и&nbsp;его познавательных изысканий, интерес 
+                        к&nbsp;научно‑популярной литературе заметно вырос
                     </p>
                 </li>
                 <li class="news__item">
@@ -77,7 +74,7 @@
         </section>
 
         <section class="promo">
-            <h2 class="promo__title promo__content font__rob_4">Абонементы в театр</h2>
+            <h2 class="promo__title font__rob_4">Абонементы в театр</h2>
             <div class="promo__wrap">
                 <ul class="promo__list list-default">
                     <li class="promo__item">
@@ -99,7 +96,10 @@
                         </p>
                     </li>
                 </ul>
-                <button class="btn btn__accent">Смотреть -></button>
+                <button class="btn btn__accent">
+                    Смотреть
+                    <img class="btn__accent-img" src="img/right.svg" width="16" height="16">
+                </button>
             </div>
         </section>
 
@@ -120,30 +120,24 @@
                 <li class="main-menu-item"><a href="#" class="main-menu-link">Живопись</a></li>
             </ul>
         </nav>
-        <ul class="social__list">
-            <li class="social__item"><a href="#" class="social__link"><img src="img/social-inst.svg" alt="Instagram" class="social__item-img" width="47" height="47"></a></li>
-            <li class="social__item"><a href="#" class="social__link"><img src="img/social-fb.svg" alt="Facebook" class="social__item-img" width="47" height="47"></a></li>
-            <li class="social__item"><a href="#" class="social__link"><img src="img/social-tw.svg" alt="Twitter" class="social__item-img" width="47" height="47"></a></li>
+        <ul class="social__list list-default">
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="img/social-inst.svg" alt="Instagram" class="social__item-img" width="47" height="47">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="img/social-fb.svg" alt="Facebook" class="social__item-img" width="47" height="47">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <img src="img/social-tw.svg" alt="Twitter" class="social__item-img" width="47" height="47">
+                </a>
+            </li>
         </ul>
     </footer>
-
-  <!-- Наполнение страницы -->
-  
-  <!-- <img class="" src="" width="" height="" alt="">
-  <a class="" href="#" title="Всплывающая подсказка">Текст ссылки</a> -->
-
-  <!-- Адаптивная картинка -->
-  <!-- <picture>
-    <source media="(min-width: 960px)" srcset="a.png">
-    <source media="(min-width: 600px)" srcset="b.png">
-    <img src="c.png">
-  </picture> -->
-
-  <!-- Формы/попапы  -->
-
-  <!-- Подключение скриптов -->
-  <!-- <script src="js/script.js"></script> -->
-  <!-- <script src="js/min_script.js"></script> -->
 
 </body>
 </html>
